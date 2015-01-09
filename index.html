@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Event And Communication</title>
+</head>
+<body>
+
+<div ng-app="shoppingApp">
+    <div ng-controller="shoppingMasterController">
+        Balance is : {{balance}}
+        <div ng-controller="ediblesController">
+            <button ng-click="buyHandler()" ng-disabled="disableBuy" >Buy edible</button>
+        </div>
+        <div ng-controller="clothesController">
+            <button ng-click="buyHandler()" ng-disabled="disableBuy">Buy clothes</button>
+        </div>
+    </div>
+</div>
+
+<script src="angular.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
