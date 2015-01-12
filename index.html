@@ -5,7 +5,12 @@
     <title>Event And Communication</title>
 </head>
 <body>
-
+<h1>Events and Communication</h1>
+<hr>
+<hr>
+<div>
+    <h2>Shopping Application</h2>
+</div>
 <div ng-app="shoppingApp">
     <div ng-controller="shoppingMasterController">
         Balance is : {{balance}}
@@ -18,6 +23,32 @@
     </div>
 </div>
 
+<br>
+<hr>
+<hr>
+<br>
+
+<div id="ironFactoryERPApp">
+    <div>
+        <h2>Factory ERP Application</h2>
+    </div>
+    <hr>
+
+    <div id="productionFloor" ng-controller="productionFloorController">
+        <h3>Production Floor</h3>
+        <button ng-click="fetchIron()" ng-disabled="notEnoughIron">Fetch 100 Kg Iron From Inventory</button>
+    </div>
+
+    <hr>
+
+    <div id="inventory" ng-controller="inventoryController">
+        <h3>Inventory</h3>
+        Available iron: {{ironAvailable}}
+    </div>
+
+</div>
+
+<script src="jquery-2.1.3.js"></script>
 <script src="angular.js"></script>
 <script src="app.js"></script>
 
